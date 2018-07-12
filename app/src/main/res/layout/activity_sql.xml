@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ist"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/ne"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.example.nasar_khan.sql.SQL">
+
+
+    <Button
+        android:id="@+id/but"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="right"
+        android:layout_weight="0.04"
+        android:background="@drawable/y"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_weight="0.04"
+        android:background="@android:drawable/zoom_plate"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_weight="0.04"
+            android:text="   Log In/ Create Account"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/temail"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.04"
+            android:background="@android:drawable/editbox_dropdown_light_frame"
+            android:ems="10"
+            android:hint="  Enter Email Please!"
+
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/tpassword"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.04"
+            android:background="@android:drawable/editbox_dropdown_light_frame"
+            android:ems="10"
+            android:hint=" Enter Password Please!"
+            android:inputType="textPassword" />
+
+        <LinearLayout
+            android:id="@+id/nd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.48"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/reg"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="13dp"
+                android:background="@android:drawable/editbox_background"
+                android:text="Create Account" />
+
+            <Button
+                android:id="@+id/btn"
+                style="@android:style/Widget.DeviceDefault.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="right"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="23dp"
+                android:background="@android:drawable/radiobutton_off_background"
+                android:text="  Log In  "
+                android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/nnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="130dp"
+        android:background="@android:drawable/toast_frame"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/textView0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="feedback@emailtonasarkhan@gmail.com"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light" />
+    </LinearLayout>
+
+</LinearLayout>
